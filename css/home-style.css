@@ -2,77 +2,30 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: grey;
+
 }
+
+
 
 a{
     text-decoration: none;
 
 }
 
-.head {
+.slide-show{
+    margin-top: 5vh;
+}
+
+.image-list{
     display: flex;
-    background-color: black;
-    align-items: center; /* Align items vertically centered */
-    padding: 10px; /* Add padding for better spacing */
-    width: 100vw;
-    height: 6vh;
-    max-height: 100px; /* Set a maximum height */
-    min-height: 40px; /* Set a minimum height */
-}
-
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.logo-head{
-    max-width: 120px;
-    max-height: 6vh;
-    margin-left: 2vw;
-    margin-right: 5vw;
-    min-width: 80px;
-}
-
-.logo-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.head-item{
-    margin-right: 5vw;
-}
-
-.menu {
-    display: flex; /* Apply flexbox to ul */
-    width: 100%; /* Ensure it takes the full available width */
-}
-
-.menu li {
-    color: white; /* Set text color to white */
-    padding: 0 10px; /* Add padding for better spacing */
-}
-.menu a{
-    color: white;
-}
-
-.search-button{
-    --searchpad: 6px;
-
-    width: max-content;
-    display: flex;
+    flex-direction: column;
     align-items: center;
-    padding: var(--searchpad);
-    border-radius: 15px;
-    background-color: rgb(236, 236, 236);
-    width: 25vw;
+    justify-content: center;
 }
 
-.search-input{
-    border: none;
-    margin-left: var(--searchpad);
-    outline: none;
-    background: transparent;
-    flex: 1;
+.image-list img{
+    margin-bottom: 20px;
+    width: 60vw;
+    height: auto;
 }
-
