@@ -27,22 +27,54 @@ ul {
     max-height: 100%;
 }
 
-.navbar{
-    margin-right: 5vw;
-}
-
 .nav a{
     text-decoration: none;
     color: white;
 }
 
-.nav{
-    display: inline-block;
-    float: none;
+.nav {
+    display: flex;
+    gap: 20px; /* Space between items */
+    list-style: none;
 }
 
 .nav-item {
+    height: 100%;  /* Makes each nav item as tall as the header */
+    padding: 0 20px;  /* Adds more horizontal padding for width */
+    display: flex;
+    align-items: center;  /* Vertically centers the text within the nav items */
+    justify-content: center;  /* Horizontally centers the text */
+    min-width: 80px;  /* Ensures each item is at least 80px wide */
     border: 1px solid red; /* Chỉ để kiểm tra */
+}
+
+
+.dropdown-shop {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Positioning the dropdown just below the nav item */
+    left: 0;
+    background-color: black;
+    list-style: none;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+.dropdown-menu li a {
+    color: white;
+    text-decoration: none;
+}
+
+.dropdown-shop:hover .dropdown-menu {
+    display: block;
 }
 
 
