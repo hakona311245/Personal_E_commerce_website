@@ -1,82 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/home-style.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/default.css">
-    <script src="https://kit.fontawesome.com/8c6957fe62.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>TechZone - Macbook Premium</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <title>MacZone - Premium MacBook Store</title>
+
 </head>
-
 <body>
-<header>
-    <div class="head">
-        <div class="logo-head">
-            <a href="Home.html">
-                <img class="logo-img" src="gallery/logo-resizeevensmaller.png" alt="TechZone logo">
-            </a>            
-        </div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <i class="fab fa-apple"></i> MacZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-laptop me-2"></i>MacBooks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
+                        <li>
+                            <a class="dropdown-item" href="macbookair_section.html">
+                                MacBook Air
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                MacBook Pro
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
 
-    <div class="head-item">
-        <ul class="nav">
-            <li class="nav-item"><a href="Home.html">Home</a></li>
-            <li class="nav-item dropdown-shop">
-                <a href="macbook.html">Shop</a>
-                <ul class="dropdown-menu">
-                    <li><a href="macbook-air.html">Macbook Air</a></li>
-                    <li><a href="macbook-pro.html">Macbook Pro</a></li>
+            <!-- Thanh search -->
+              <form class="d-flex me-3 flex-grow-1" role="search">
+                <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <!-- Nút tài khoản -->
+            <div class="d-none d-lg-flex align-items-center">
+                <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
+                    <i class="fas fa-user me-2"></i>Tài khoản
+                </button>
+                <button class="btn btn-outline-light">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- Account Modal -->
+  <div class="modal fade" id="accountModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fas fa-user-plus me-2"></i>Đăng ký
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fas fa-user-circle me-2"></i>Thông tin cá nhân
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="#" class="text-decoration-none text-dark">
+                            <i class="fas fa-history me-2"></i>Lịch sử mua hàng
+                        </a>
+                    </li>
                 </ul>
-            </li>
-            
-            <li class="nav-item"><a href="About Us.html">About Us</a></li>
-        </ul>   
-    </div>
-
-
-    <div class="search-button">
-        <span class="search-icon material-symbols-outlined">
-                    search
-        </span>
-        <input class="search-input" type="search" placeholder="Macbook Air/Pro...">  
-    </div>
-
-        <div class="cart-account">
-            <div class="cart-button">
-                <a href="cart.html">
-                <span class="cart-icon material-symbols-outlined">
-                    shopping_cart
-                </span>
-                </a>
-            </div>
-            <div class="account-button">
-                <a href="account.html">
-                    <span class="account-icon material-symbols-outlined">
-                        person
-                </span>
-                </a>
             </div>
         </div>
     </div>
-</header>
+  </div>
 
-<main>
-    <div class="slide-show">
-        <a href="#">
-        <div class="image-list">
-                <img src="gallery/image slider/m2-macbook-air-features.webp">
-                <img src="gallery/image slider/Macbookpro_M1pro_max.jpg">
-        </div>
-    </a>
-    </div>
-    <div class="title_website">
-        
-        <h1><i class="fa-brands fa-apple" style="color: #000000;"></i> Macbook</h1>
-    </div>
+  <!-- Hero Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <!-- Carousel Indicators -->
+  <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  </div>
+
+  <div class="carousel-inner">
+      <div class="carousel-item active">
+          <img src="gallery/image slider/macbookpro.jpg" class="d-block w-100" alt="MacBook Pro">
+          <div class="carousel-caption">
+              <h2>MacBook Pro</h2>
+              <p>Hiệu năng bứt phá, dẫn đầu mọi thách thức</p>
+              <a href="#" class="btn btn-light">Mua ngay</a>
+          </div>
+      </div>
+      <div class="carousel-item">
+          <img src="https://via.placeholder.com/1200x500.png?text=MacBook+Air" class="d-block w-100" alt="MacBook Air">
+          <div class="carousel-caption">
+              <h2>MacBook Air</h2>
+              <p>Mỏng nhẹ vượt trội, tự do khám phá mọi nơi</p>
+              <a href="#" class="btn btn-light">Mua ngay</a>
+          </div>
+      </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
 
-</main>
+  <!-- Product Grid -->
+  <section class="product-grid container">
+      <h2 class="text-center mb-4">Bộ sưu tập Macbook</h2>
+      <div class="row">
+          <div class="col-md-4 mb-4">
+              <div class="card product-card">
+                  <img src="https://via.placeholder.com/300x200.png?text=MacBook+Air" class="card-img-top" alt="MacBook Air">
+                  <div class="card-body">
+                      <h5 class="card-title">MacBook Air M2</h5>
+                      <p class="card-text">Lightweight and powerful.</p>
+                      <a href="#" class="btn btn-primary">From $999</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card product-card">
+                  <img src="https://via.placeholder.com/300x200.png?text=MacBook+Pro" class="card-img-top" alt="MacBook Pro">
+                  <div class="card-body">
+                      <h5 class="card-title">MacBook Pro 14"</h5>
+                      <p class="card-text">Professional performance.</p>
+                      <a href="#" class="btn btn-primary">From $1999</a>
+                  </div>
+              </div>
+          </div>
+          <div class="col-md-4 mb-4">
+              <div class="card product-card">
+                  <img src="https://via.placeholder.com/300x200.png?text=MacBook+Pro+M3" class="card-img-top" alt="MacBook Pro M3">
+                  <div class="card-body">
+                      <h5 class="card-title">MacBook Pro M3</h5>
+                      <p class="card-text">Next-level computing.</p>
+                      <a href="#" class="btn btn-primary">From $1599</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+      <p>&copy; 2024 MacZone. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

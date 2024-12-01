@@ -1,127 +1,29 @@
-.head {
-    display: flex;
-    background-color: black;
-    align-items: center;
-    padding: 10px; 
-    width: 100%;
-    height: 6vh;
 
-}
+.navbar {
+    max-height: 80px;
 
+  }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-}
+.navbar-nav {
+    margin-right: 0 !important; 
+    padding-right: 0 !important; 
+} 
 
-.logo-head{
-    max-width: 120px;
-    max-height: 6vh;
-    margin-left: 2vw;
-    margin-right: 5vw;
-    min-width: 80px;
-}
+  #logohead {
+    max-height: 80px;
+    height: 100%;
+    width: auto; /* Maintains aspect ratio */
+  }
 
-.logo-img{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.nav a{
-    text-decoration: none;
+  .dropdown-menu .dropdown-item {
     color: white;
-}
+  }
 
-.nav {
-    display: flex;
-    gap: 20px; /* Space between items */
-    list-style: none;
-}
-
-.nav-item {
-    height: 100%;  /* Makes each nav item as tall as the header */
-    padding: 0 20px;  /* Adds more horizontal padding for width */
-    display: flex;
-    align-items: center;  /* Vertically centers the text within the nav items */
-    justify-content: center;  /* Horizontally centers the text */
-    min-width: 80px;  /* Ensures each item is at least 80px wide */
-    border: 1px solid red; /* Chỉ để kiểm tra */
-}
-
-
-.dropdown-shop {
-    position: relative;
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 100%; /* Positioning the dropdown just below the nav item */
-    left: 0;
-    background-color: black;
-    list-style: none;
-    padding: 0;
-}
-
-.dropdown-menu li {
-    padding: 10px;
-    border-bottom: 1px solid #fff;
-}
-
-.dropdown-menu li a {
-    color: white;
-    text-decoration: none;
-}
-
-.dropdown-shop:hover .dropdown-menu {
-    display: block;
-}
-
-
-.search-button{
-    --searchpad: 6px;
-
-    display: flex;
-    align-items: center;
-    margin-left: 12vw;
-    padding: var(--searchpad);
-    border-radius: 15px;
-    background-color: rgb(236, 236, 236);
-    width: 25vw;
-}
-
-.search-input{
-    border: none;
-    margin-left: var(--searchpad);
-    outline: none;
-    background: transparent;
-    flex: 1;
-}
-
-
-
-.cart-account {
-    display: flex;
-    margin-left: auto;
-    margin-right: 2vw; 
-}
-
-.cart-icon {
-    color: white;
-    
-}
-
-.account-icon{
-    color: white;
-}
-
-.cart-button, .account-button{
-    width: 40px; 
-    height: 40px; 
-    background-color: #363636; 
-    border-radius: 50%; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-    margin: 0 8px; 
+  .dropdown-menu .dropdown-item:hover {
+    color: white; 
+    background-color: #333; 
+  }
+  
+  .custom-bg {
+    background-color: #343A40 !important; /* !important ensures it overrides default styles */
 }
