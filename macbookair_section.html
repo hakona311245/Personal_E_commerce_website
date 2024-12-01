@@ -17,8 +17,8 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="Home.html">
-                <i class="fab fa-apple"></i>MacZone
+            <a class="navbar-brand" href="#">
+                <i class="fab fa-apple"></i> MacZone
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="Home.html"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                        <a class="nav-link" href="#"><i class="fas fa-home me-2"></i>Trang chủ</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -49,7 +49,14 @@
                     </li>
                 </ul>
                 <div class="d-flex align-items-center">
-                <!-- Account Section for Desktop -->
+    
+                <!-- Thanh search -->
+                <form class="d-flex me-3 flex-grow-1" role="search">
+                  <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              
+                <!-- Nút tài khoản -->
                 <div class="d-none d-lg-flex align-items-center">
                     <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
                         <i class="fas fa-user me-2"></i>Tài khoản
@@ -110,6 +117,15 @@
                     <div>
                         <span class="badge bg-secondary badge-filter" data-filter="model">MacBook Air</span>
                         <span class="badge bg-secondary badge-filter" data-filter="model">MacBook Pro</span>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h5>Màu</h5>
+                    <div>
+                        <span class="badge bg-secondary badge-filter" data-filter="model">Xanh Navy</span>
+                        <span class="badge bg-secondary badge-filter" data-filter="model">Xám Titan</span>
+                        <span class="badge bg-secondary badge-filter" data-filter="model">Vàng Golden</span>
                     </div>
                 </div>
 
@@ -189,8 +205,8 @@
                         <div class="card product-card">
                             <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
+                                <h5 class="card-title">MacBook Air 13" M2 Xanh Navy</h5>
+                                <p class="card-text text-muted">RAM: 8GB, SSD: 256GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="h5 mb-0">24.290.000đ</span>
                                     <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
@@ -207,10 +223,10 @@
                         <div class="card product-card">
                             <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
+                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
+                                    <span class="h5 mb-0">28.890.000đ</span>
                                     <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
@@ -223,10 +239,10 @@
                         <div class="card product-card">
                             <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
+                                <h5 class="card-title">MacBook Air 13" M2 Vàng Golden</h5>
+                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
+                                    <span class="h5 mb-0">25.490.000đ</span>
                                     <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
                                 </div>
                             </div>
@@ -239,8 +255,8 @@
                         <div class="card product-card">
                             <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
+                                <h5 class="card-title">MacBook Air 16" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 1TB, Màn Hình: 16"</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="h5 mb-0">24.290.000đ</span>
                                     <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
@@ -250,133 +266,7 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="macbook-air-m2.jpg" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 256GB</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
-                                    <button class="btn btn-primary btn-sm">Thêm vào giỏ hàng</button>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                
 
               <!-- Pagination -->
               <nav aria-label="Product pages" class="mt-4">
@@ -396,20 +286,25 @@
       </div>
   </div>
 
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 MacZone. All Rights Reserved.</p>
+    </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
   
   <script>
       document.addEventListener('DOMContentLoaded', function() {
-          // Filter Badge Interaction
-          const filterBadges = document.querySelectorAll('.badge-filter');
-          filterBadges.forEach(badge => {
-              badge.addEventListener('click', function() {
-                  // Toggle active state
-                  this.classList.toggle('active');
-              });
-          });
-      });
+    // Filter Badge Interaction
+    const filterBadges = document.querySelectorAll('.badge-filter');
+    filterBadges.forEach(badge => {
+        badge.addEventListener('click', function() {
+            // Toggle active state
+            this.classList.toggle('active');
+        });
+    });
+});
+
   </script>
 </body>
 </html>

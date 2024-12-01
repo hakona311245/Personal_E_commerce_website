@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MacZone - Premium MacBook Store</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Swiper Slider CSS -->
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/product_page.css">
+
+    <style>
+            .product-gallery {
+        width: 100%;
+        height: 500px; /* Fixed height */
+    }
+    .product-gallery .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f4f4f4;
+    }
+    .product-gallery .swiper-slide img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain; /* Changed from cover to contain */
+        transition: transform 0.3s ease;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+        .product-gallery {
+            height: 300px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="Home.html">
+                <i class="fab fa-apple"></i> MacZone
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="Home.html"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-laptop me-2"></i>MacBooks
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
+                            <li>
+                                <a class="dropdown-item" href="macbookair_section.html">
+                                    MacBook Air
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    MacBook Pro
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            
+                        </ul>
+                    </li>
+                </ul>
+                <div class="d-flex align-items-center">
+    
+                <!-- Thanh search -->
+                <form class="d-flex me-3 flex-grow-1" role="search">
+                  <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+              </form>
+              
+                <!-- Nút tài khoản -->
+                <div class="d-none d-lg-flex align-items-center">
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
+                        <i class="fas fa-user me-2"></i>Tài khoản
+                    </button>
+                    <button class="btn btn-outline-light">
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+      </nav>
+      
+      <!-- Account Modal -->
+      <div class="modal fade" id="accountModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Tài khoản</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <i class="fas fa-user-plus me-2"></i>Đăng ký
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <i class="fas fa-user-circle me-2"></i>Thông tin cá nhân
+                            </a>
+                        </li>
+                        <li class="list-group-item">
+                            <a href="#" class="text-decoration-none text-dark">
+                                <i class="fas fa-history me-2"></i>Lịch sử mua hàng
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </div>
+    <div class="container mt-5 pt-5">
+        <!-- Product Gallery -->
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="swiper product-gallery">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="gallery/product-detail/macbookair_detail/frontview.png" alt="MacBook Air M2 - View 1">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="gallery/product-detail/macbookair_detail/keyboardview.jpg" alt="MacBook Air M2 - View 2">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="gallery/product-detail/macbookair_detail/sideview.jpg" alt="MacBook Air M2 - View 3">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="gallery/product-detail/macbookair_detail/portview.jpg" alt="MacBook Air M2 - View 4">
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="gallery/product-detail/macbookair_detail/logoview.jpg" alt="MacBook Air M2 - View 5">
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Product Overview -->
+        <div class="row mb-5">
+            <div class="col-lg-7">
+                <div class="product-specs">
+                    <h2 class="mb-4">MacBook Air 13" M2 Xanh Navy</h2>
+                    
+                    <div class="price-section mb-4">
+                        <h3 class="text-primary">24.290.000đ</h3>
+                        <span class="badge bg-success">Còn hàng</span>
+                    </div>
+
+                    <div class="specs-list">
+                        <h5>Thông số chính:</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-microchip me-2"></i>Chip: Apple M2 (8 CPU/8 GPU)</li>
+                            <li><i class="fas fa-memory me-2"></i>RAM: 8GB</li>
+                            <li><i class="fas fa-hdd me-2"></i>SSD: 256GB</li>
+                            <li><i class="fas fa-desktop me-2"></i>Màn hình: 13.6" Liquid Retina</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="product-actions">
+                    <button class="btn btn-primary w-100 mb-3">
+                        <i class="fas fa-shopping-cart me-2"></i>Thêm vào giỏ hàng
+                    </button>
+                    <button class="btn btn-success w-100">
+                        <i class="fas fa-credit-card me-2"></i>Mua ngay
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Detailed Information -->
+        <div class="row">
+            <div class="col-12">
+                <div class="detailed-info p-4">
+                    <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button" role="tab">Mô tả</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button" role="tab">Thông số kỹ thuật</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content mt-3" id="productTabsContent">
+                        <div class="tab-pane fade show active" id="description" role="tabpanel">
+                            <h1>MacBook Air M2: Sự Kết Hợp Hoàn Hảo Giữa Hiệu Suất Và Thiết Kế</h1>
+                            <p>MacBook Air M2 là minh chứng cho sự cải tiến vượt bậc về hiệu năng và thiết kế từ Apple. Với con chip Apple M2, thế hệ tiếp theo của bộ vi xử lý Silicon, chiếc MacBook này không chỉ nhanh hơn, mạnh mẽ hơn mà còn tiết kiệm năng lượng tối ưu. Đây chính là lựa chọn lý tưởng cho các công việc đòi hỏi hiệu suất cao như chỉnh sửa video, lập trình hay đa nhiệm hàng ngày.</p>
+
+                            <h2>Hiệu Năng Đột Phá Với Chip M2</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/performancechart.jpg" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>Bộ vi xử lý Apple M2 mang lại tốc độ xử lý nhanh hơn đến 18% so với thế hệ M1, trong khi GPU tích hợp tăng hiệu suất đồ họa lên đến 35%. Với khả năng xử lý lên đến <strong>24GB RAM</strong> và bộ lưu trữ SSD tốc độ cao, bạn có thể mở nhiều ứng dụng cùng lúc mà không lo giật lag. Thời lượng pin lên đến <strong>18 giờ</strong> đảm bảo bạn có thể làm việc hoặc giải trí suốt cả ngày mà không cần sạc.</p>
+
+                            <h2>Thiết Kế Siêu Mỏng Nhẹ, Sang Trọng</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/broll.jpg" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>MacBook Air M2 sở hữu thiết kế hoàn toàn mới với độ dày chỉ <strong>11.3mm</strong> và trọng lượng vỏn vẹn <strong>1.24kg</strong>, giúp bạn dễ dàng mang theo khi di chuyển. Thân máy được làm từ <strong>100% nhôm tái chế</strong>, không chỉ sang trọng mà còn thân thiện với môi trường. Với bốn màu sắc tinh tế gồm <em>Midnight</em> (Đen Xanh), <em>Starlight</em> (Vàng Nhẹ), <em>Silver</em> (Bạc) và <em>Space Gray</em> (Xám Không Gian), chiếc laptop này phù hợp với mọi phong cách cá nhân.</p>
+
+                            <h2>Màn Hình Liquid Retina Sống Động</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/screen.jpg" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>Màn hình <strong>Liquid Retina 13.6 inch</strong> là một bước tiến lớn với độ sáng <strong>500 nits</strong> và khả năng hiển thị <strong>1 tỷ màu</strong>, mang lại hình ảnh sắc nét, sống động và chi tiết hơn bao giờ hết. Công nghệ True Tone tự động điều chỉnh màu sắc phù hợp với môi trường ánh sáng, giúp mắt bạn dễ chịu hơn khi sử dụng trong thời gian dài.</p>
+
+                            <h2>Camera và Âm Thanh Cải Tiến</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/webcam.webp" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>Camera FaceTime HD <strong>1080p</strong> đảm bảo hình ảnh sắc nét trong các cuộc họp video, trong khi hệ thống micro và loa được cải thiện cho âm thanh trong trẻo hơn. Công nghệ <em>Spatial Audio</em> (Âm Thanh Không Gian) và <em>Dolby Atmos</em> mang đến trải nghiệm âm thanh sống động, bao phủ không gian.</p>
+
+                            <h2>Bàn Phím Magic Keyboard Và Trackpad Lớn</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/keyboardcloseup.jpg" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>Bàn phím <strong>Magic Keyboard</strong> mang lại cảm giác gõ phím thoải mái và yên tĩnh. Trackpad Force Touch lớn, nhạy và chính xác, hỗ trợ các thao tác đa điểm mượt mà.</p>
+
+                            <h2>Kết Nối Đa Dạng Và Bảo Mật Cao</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/thin.webp" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>MacBook Air M2 trang bị hai cổng <strong>Thunderbolt/USB 4</strong> hỗ trợ tốc độ truyền dữ liệu cao và sạc <strong>MagSafe</strong> mới, giúp kết nối an toàn và nhanh chóng. Chip Apple M2 tích hợp <em>Secure Enclave</em>, cùng với <strong>Touch ID</strong> trên bàn phím, mang đến bảo mật hàng đầu cho dữ liệu cá nhân và công việc của bạn.</p>
+
+                            <h2>Hoàn Hảo Cho Mọi Nhu Cầu Sử Dụng</h2>
+                            <figure>
+                                <img src="gallery/product-detail/macbookair_detail/mota/multimedia.jpg" alt="MacBook Air M2" style="max-width: 100%; height: auto; display: block; margin: 0 auto;">
+                            </figure>
+                            <p>MacBook Air M2 không chỉ là một chiếc laptop mà còn là một tuyên ngôn về phong cách sống hiện đại. Dù bạn là sinh viên, dân văn phòng, hay nhà sáng tạo nội dung, chiếc MacBook này đều đáp ứng hoàn hảo mọi nhu cầu từ làm việc, học tập, đến giải trí.</p>
+
+                            <p><strong>Hãy trải nghiệm MacBook Air M2 để khám phá sự khác biệt mà công nghệ đột phá mang lại!</strong></p>
+                        </div>
+                        <div class="tab-pane fade" id="specifications" role="tabpanel">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th></th>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>RAM</th>
+                                        <td>8GB</td>
+                                    </tr>
+                                    <!-- More specs -->
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 MacZone. All Rights Reserved.</p>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Initialize Swiper
+        new Swiper('.product-gallery', {
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+        });
+    </script>
+</body>
+</html>
