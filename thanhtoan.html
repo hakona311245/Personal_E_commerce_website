@@ -229,20 +229,24 @@
       </div>
 
       <div class="section">
-          <h2>Phương Thức Thanh Toán</h2>
-          <div class="payment-method">
-              <input type="radio" name="payment" id="cash">
-              <label for="cash">Thanh Toán Tiền Mặt</label>
-          </div>
-          <div class="payment-method">
-              <input type="radio" name="payment" id="bank">
-              <label for="bank">Chuyển Khoản Ngân Hàng</label>
-          </div>
-          <div class="payment-method">
-              <input type="radio" name="payment" id="card">
-              <label for="card">Thẻ Tín Dụng</label>
-          </div>
-      </div>
+        <h2>Phương Thức Thanh Toán</h2>
+        <div class="payment-method">
+            <input type="radio" name="payment" id="cash">
+            <label for="cash">Thanh Toán Tiền Mặt</label>
+        </div>
+        <div class="payment-method">
+            <input type="radio" name="payment" id="card">
+            <label for="card">Thẻ Tín Dụng</label>
+        </div>
+        <div id="card-info">
+            <input type="text" placeholder="Tên trên thẻ">
+            <input type="text" placeholder="Số thẻ">
+            <div style="display: flex; gap: 10px;">
+                <input type="text" placeholder="Ngày hết hạn (MM/YY)" style="flex: 1;">
+                <input type="text" placeholder="CVV" style="flex: 1;">
+            </div>
+        </div>
+    </div>
 
       <div class="section order-summary">
           <h2>Tóm Tắt Đơn Hàng</h2>
