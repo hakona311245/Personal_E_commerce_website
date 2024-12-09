@@ -1,0 +1,41 @@
+/* Ẩn các form tùy chọn */
+.new-address {
+    display: none;
+  }
+  
+  /* Khi chọn địa chỉ mới */
+  #address-select[value="new"]:checked ~ .new-address {
+    display: block;
+  }
+  
+  .address-inputs input,
+  .address-inputs textarea {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 8px;
+    width: 100%;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .table th,
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .checkout-container {
+    margin-top: 100px;
+  }
+  
+  footer {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 14px;
+  }
+  

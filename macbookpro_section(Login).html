@@ -15,86 +15,96 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="Home.html">
-                <i class="fab fa-apple"></i> MacZone
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="Home.html"><i class="fas fa-home me-2"></i>Trang chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="fas fa-laptop me-2"></i>MacBooks
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="Home(Login).html">
+            <i class="fab fa-apple"></i> MacZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home(Login).html"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-laptop me-2"></i>MacBooks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
+                        <li>
+                            <a class="dropdown-item" href="macbookair_section(Login).html   ">
+                                MacBook Air
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="macbookpro_section(Login).html">
+                                MacBook Pro
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+
+            <!-- Thanh search -->
+            <form class="d-flex me-3 flex-grow-1" role="search">
+              <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          
+            <!-- Nút tài khoản -->
+            <div class="d-none d-lg-flex align-items-center">
+                <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
+                    <i class="fas fa-user me-2"></i>Đăng Khoa
+                </button>
+                <button class="btn btn-outline-light">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- Account Modal -->
+  <div class="modal fade" id="accountModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="acc-info.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-user me-2"></i>Thông tin tài khoản
                         </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
-                            <li>
-                                <a class="dropdown-item" href="macbookair_section.html">
-                                    MacBook Air
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="macbookpro_section.html">
-                                    MacBook Pro
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            
-                        </ul>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="history.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-clock-rotate-left me-2"></i></i>Lịch sử đơn hàng
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="address-book.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-address-book me-2"></i>Sổ địa chỉ
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Home.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất
+                        </a>
                     </li>
                 </ul>
-                <div class="d-flex align-items-center">
-    
-                <!-- Thanh search -->
-                <form class="d-flex me-3 flex-grow-1" role="search" action="search.html">
-                    <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
-                    <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
-                </form>
-              
-                <!-- Nút tài khoản -->
-                <div class="d-none d-lg-flex align-items-center">
-                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
-                        <i class="fas fa-user me-2"></i>Tài khoản
-                    </button>
-                    <button class="btn btn-outline-light" onclick="cart()">
-                        <i class="fas fa-shopping-cart"></i>
-                    </button>
-                </div>
             </div>
         </div>
-      </nav>
-      
-      <!-- Account Modal -->
-      <div class="modal fade" id="accountModal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title">Tài khoản</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <a href="Login.html" class="text-decoration-none text-dark">
-                                <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
-                            </a>
-                        </li>
-                        <li class="list-group-item">
-                            <a href="#" class="text-decoration-none text-dark">
-                                <i class="fas fa-user-plus me-2"></i>Đăng ký
-                            </a>
-                        </li>
-    
-                    </ul>
-                </div>
-            </div>
-        </div>
-      </div>
+    </div>
+  </div>
 
   <div class="container-fluid mt-5 pt-5">
       <div class="row">
@@ -175,7 +185,7 @@
           <!-- Product Listing -->
           <div class="col-lg-9 col-md-8">
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h2>MacBook Air</h2>
+                <h2>MacBook Pro</h2>
                 <div class="d-flex align-items-center">
                     <span class="me-2">Xếp theo:</span>
                     <div class="dropdown">
@@ -196,14 +206,15 @@
 
                   <!-- Product Card Template -->
                   <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
                         <div class="card product-card">
-                            <img src="gallery/product-card/macbookairm2navy.webp" class="card-img-top" alt="MacBook Air M2">
+                            <img src="gallery/product-card/macbookpro-m2.webp" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Xanh Navy</h5>
+                                <h5 class="card-title">MacBook Pro 13" M2 Xám Titan</h5>
                                 <p class="card-text text-muted">RAM: 8GB, SSD: 256GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">24.290.000đ</span>
+                                    <span class="h5 mb-0">29.790.000đ
+                                    </span>
                                 </div>
                             </div>
                         </div>
@@ -213,14 +224,14 @@
 
                   <!-- Repeat product cards here... -->
                   <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
                         <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
+                                <h5 class="card-title">MacBook Pro 16" M3 Xám Titan</h5>
                                 <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">28.890.000đ</span>
+                                    <span class="h5 mb-0">35.990.000₫</span>
                                 </div>
                             </div>
                         </div>
@@ -228,7 +239,128 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m2.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 13" M2 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 8GB, SSD: 256GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">29.790.000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m2.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 13" M2 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 8GB, SSD: 256GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">29.790.000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m2.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 13" M2 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 8GB, SSD: 256GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">29.790.000đ
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 16" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">35.990.000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 14" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">35.990.000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 16" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">35.990.000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 16" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">35.990.000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
+                        <div class="card product-card">
+                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <div class="card-body">
+                                <h5 class="card-title">MacBook Pro 16" M3 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="h5 mb-0">35.990.000₫</span>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 col-sm-6">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
                         <div class="card product-card">
                             <img src="gallery/product-card/macbookairm2gold.png" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
@@ -243,7 +375,7 @@
                 </div>
 
                 <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
+                    <a href="product-detail(Login).html" class="text-decoration-none product-link">
                         <div class="card product-card">
                             <img src="gallery/product-card/macbook-air-m3-15-silver.webp" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
@@ -257,137 +389,19 @@
                     </a>
                 </div>
 
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">28.890.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+                
 
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbookairm2gold.png" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Vàng Golden</h5>
-                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">25.490.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m3-15-silver.webp" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 15" M3 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 15"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">33.390.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">28.890.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbookairm2gold.png" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Vàng Golden</h5>
-                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">25.490.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m3-15-silver.webp" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 15" M3 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 15"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">33.390.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">28.890.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="col-md-4 col-sm-6">
-                    <a href="product-detail.html" class="text-decoration-none product-link">
-                        <div class="card product-card">
-                            <img src="gallery/product-card/macbookairm2gold.png" class="card-img-top" alt="MacBook Air M2">
-                            <div class="card-body">
-                                <h5 class="card-title">MacBook Air 13" M2 Vàng Golden</h5>
-                                <p class="card-text text-muted">RAM: 8GB, SSD: 512GB, Màn Hình: 13.6"</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">25.490.000đ</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-              <!-- Phân trang -->
+              <!-- Pagination -->
               <nav aria-label="Product pages" class="mt-4">
                 <ul class="pagination justify-content-center">
                     <li class="page-item disabled">
                         <a class="page-link" href="#" tabindex="-1">Previous</a>
                     </li>
-                    <li class="page-item active"><a class="page-link" href="macbookair_section.html">1</a></li>
-                    <li class="page-item"><a class="page-link" href="macbookair_section2.html">2</a></li>
-                    <li class="page-item"><a class="page-link" href="macbookair_section3.html">3</a></li>
+                    <li class="page-item active"><a class="page-link" href="macbookpro_section.html">1</a></li>
+                    <li class="page-item"><a class="page-link" href="macbookpro_section2.html">2</a></li>
+                    <li class="page-item"><a class="page-link" href="macbookpro_section3.html">3</a></li>
                     <li class="page-item">
-                        <a class="page-link" href="macbookair_section2.html">Next</a>
+                        <a class="page-link" href="macbookpro_section2.html">Next</a>
                     </li>
                 </ul>
               </nav>

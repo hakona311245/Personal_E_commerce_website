@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Trang Quản Trị - Thống kê theo khách hàng</title>
+</head>
+<body>
+
+  <!-- Sidebar (Navigation) -->
+  <div class="d-flex" id="admin-dashboard">
+    <div class="bg-dark text-white p-3" style="width: 250px; min-height: 100vh;">
+      <h3 class="text-center">Admin Panel</h3>
+      <ul class="nav flex-column mt-3">
+        <li class="nav-item">
+          <a class="nav-link text-white" href="quanlynguoidung.html">
+             Quản lý người dùng
+          </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-white" href="quanlysanpham.html">
+              Quản lý sản phẩm
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="quanlydonhang.html">
+               Quản lý đơn hàng
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="thongketheomathang.html">
+               Thống kê doanh thu theo mặt hàng
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="thongketheokh.html">
+               Thống kê doanh thu theo khách hàng
+            </a>
+          </li>
+      </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="container-fluid p-4">
+        <h2 class="mb-4">Thống kê theo khách hàng</h2>
+
+        
+        <!-- Lọc thống kê theo thời gian -->
+        <div class="mb-3">
+            <label for="filterDateRange" class="form-label">Lọc thống kê theo khoảng thời gian</label>
+            <div class="d-flex">
+              <input type="date" class="form-control me-2" id="startDate" placeholder="Ngày bắt đầu">
+              <input type="date" class="form-control" id="endDate" placeholder="Ngày kết thúc">
+            </div>
+            <a href="thongketheokh.html">
+                <button class="btn btn-primary mt-2" type="button">Lọc</button>
+            </a>
+        </div>
+
+        <div class="input-group" style="width: 300px;">
+            <input type="text" class="form-control" id="searchInput" placeholder="Tìm kiếm theo tên khách hàng">
+            <a href="thongketheomathang.html">
+                <button class="btn btn-primary" type="button" id="searchButton"><i class="fas fa-search"></i></button>
+            </a>
+          </div>
+
+
+        <!-- Danh sách khách hàng phát sinh doanh thu cao nhất -->
+        <h3 class="mt-4">Top 5 khách hàng phát sinh doanh thu nhiều nhất</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Khách hàng</th>
+              <th>Tổng doanh thu</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hồ Đăng Khoa</td>
+              <td>50,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lê Nguyễn Thiên Trang</td>
+              <td>40,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Văn An</td>
+              <td>35,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Phan Thị Lan</td>
+              <td>25,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Trần Quang Hieu</td>
+              <td>20,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <!-- Thống kê khách hàng bình thường -->
+        <h3 class="mt-4">Thống kê doanh thu theo khách hàng</h3>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Khách hàng</th>
+              <th>Email</th>
+              <th>SĐT</th>
+              <th>Địa chỉ</th>
+              <th>Doanh thu</th>
+              <th>Hành động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Hồ Đăng Khoa</td>
+              <td>khoa311245@gmail.com</td>
+              <td>0931771748</td>
+              <td>212 Nguyễn Thiện Thuật P.3 Q.3</td>
+              <td>50,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Lê Nguyễn Thiên Trang</td>
+              <td>trang0107@gmail.com</td>
+              <td>0931771749</td>
+              <td>67 Nguyễn Đình Chiểu P.5 Q.6</td>
+              <td>40,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Nguyễn Văn An</td>
+              <td>anvanduong@gmail.com</td>
+              <td>0931765520</td>
+              <td>87 Lê Thị Riêng P.5 Q.1</td>
+              <td>35,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Phan Thị Lan</td>
+              <td>lanphth@gmail.com</td>
+              <td>0931776532</td>
+              <td>42 Nguyễn Du P.3 Q.5</td>
+              <td>25,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+            <tr>
+              <td>Trần Quang Hieu</td>
+              <td>hieutq@gmail.com</td>
+              <td>0931776545</td>
+              <td>15 Trần Hưng Đạo P.10 Q.7</td>
+              <td>20,000,000 VND</td>
+              <td>
+                <button class="btn btn-info btn-sm" data-bs-toggle="modal" data-bs-target="#customerInvoicesModal">
+                  <i class="fas fa-eye"></i> Xem hóa đơn
+                </button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  <!-- Modal Xem Hóa Đơn Của Khách Hàng -->
+  <div class="modal fade" id="customerInvoicesModal" tabindex="-1" aria-labelledby="customerInvoicesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="customerInvoicesModalLabel">Danh sách hóa đơn của khách hàng</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <h6>Khách hàng: Hồ Đăng Khoa</h6>
+          <ul>
+            <li>Hóa đơn 1001 - 1,500,000 VND</li>
+            <li>Hóa đơn 1002 - 2,000,000 VND</li>
+            <li>Hóa đơn 1003 - 3,000,000 VND</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/acc-info.css">
+
+  <title>MacZone - Premium MacBook Store</title>
+
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="Home(Login).html">
+            <i class="fab fa-apple"></i> MacZone
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home(Login).html"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fas fa-laptop me-2"></i>MacBooks
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
+                        <li>
+                            <a class="dropdown-item" href="macbookair_section.html">
+                                MacBook Air
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="macbookpro_section.html">
+                                MacBook Pro
+                            </a>
+                        </li>
+                        <li><hr class="dropdown-divider"></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+            <div class="d-flex align-items-center">
+
+            <!-- Thanh search -->
+            <form class="d-flex me-3 flex-grow-1" role="search">
+              <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+          </form>
+          
+            <!-- Nút tài khoản -->
+            <div class="d-none d-lg-flex align-items-center">
+                <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
+                    <i class="fas fa-user me-2"></i>Đăng Khoa
+                </button>
+                <a href="giohang.html">
+                    <button class="btn btn-outline-light" >
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+  </nav>
+  
+  <!-- Account Modal -->
+  <div class="modal fade" id="accountModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Tài khoản</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <a href="acc-info.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-user me-2"></i>Thông tin tài khoản
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="history.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-clock-rotate-left me-2"></i></i>Lịch sử đơn hàng
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="address-book.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-address-book me-2"></i>Sổ địa chỉ
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Home.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <main>
+    <div class="account-container">
+        <div class="account-header">
+            <h2>Thông tin tài khoản</h2>
+        </div>
+        <div class="mb-3">
+            <strong>Email:</strong> <span id="email">khoa311245@gmail.com</span>
+        </div>
+        <div class="mb-3">
+            <strong>Họ tên:</strong> <span id="fullName">Hồ Đăng Khoa</span>
+        </div>
+        <div class="mb-3">
+            <strong>Số điện thoại:</strong> <span id="phone">0931551578</span>
+        </div>
+        <div class="mb-3">
+            <strong>Địa chỉ mặc định:</strong> <span id="phone">212 Điện Biên Phủ P.1 Q.1</span>
+        </div>
+    </div>
+  </main>
+   
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-5">
+    <div class="container-fluid px-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h5 class="mb-3">MacZone</h5>
+                <p class="text">Nơi trải nghiệm công nghệ đỉnh cao của Apple. Chúng tôi không chỉ bán sản phẩm, mà còn mang đến những giải pháp công nghệ thông minh.</p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <div class="mb-3">
+                    <h5 class="mb-3">Khám phá thêm</h5>
+                    <div>
+                        <a href="macbookair_section.html" class="btn btn-outline-light me-2 mb-2">MacBook Air</a>
+                        <a href="#" class="btn btn-outline-light me-2 mb-2">MacBook Pro</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-secondary my-4">
+        <div class="row">
+            <div class="col-12 text-center">
+                <p class="mb-0">
+                    <i class="fab fa-apple me-2"></i>
+                    &copy; 2024 MacZone - Nâng tầm trải nghệm công nghệ
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

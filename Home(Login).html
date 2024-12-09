@@ -19,7 +19,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <div class="container">
-        <a class="navbar-brand" href="Home.html">
+        <a class="navbar-brand" href="Home(Login).html">
             <i class="fab fa-apple"></i> MacZone
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" href="Home.html"><i class="fas fa-home me-2"></i>Trang chủ</a>
+                    <a class="nav-link" href="Home(Login).html"><i class="fas fa-home me-2"></i>Trang chủ</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarMacDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,12 +36,12 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarMacDropdown">
                         <li>
-                            <a class="dropdown-item" href="macbookair_section.html">
+                            <a class="dropdown-item" href="macbookair_section(Login).html">
                                 MacBook Air
                             </a>
                         </li>
                         <li>
-                            <a class="dropdown-item" href="macbookpro_section.html">
+                            <a class="dropdown-item" href="macbookpro_section(Login).html">
                                 MacBook Pro
                             </a>
                         </li>
@@ -53,19 +53,22 @@
             <div class="d-flex align-items-center">
 
             <!-- Thanh search -->
-            <form class="d-flex me-3 flex-grow-1" role="search" action="search.html">
-              <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
-              <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
-          </form>
+            <form class="d-flex me-3 flex-grow-1" role="search" action="search(Login).html">
+                <input class="form-control me-2 search-input" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+            </form>
           
             <!-- Nút tài khoản -->
             <div class="d-none d-lg-flex align-items-center">
                 <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#accountModal">
-                    <i class="fas fa-user me-2"></i>Tài khoản
+                    <i class="fas fa-user me-2"></i>Đăng Khoa
                 </button>
-                <button class="btn btn-outline-light" onclick="cart()">
-                    <i class="fas fa-shopping-cart"></i>
-                </button>
+                <a href="giohang.html">
+                    <button class="btn btn-outline-light" >
+                        <i class="fas fa-shopping-cart"></i>
+                    </button>
+                </a>
+                
             </div>
         </div>
     </div>
@@ -82,16 +85,25 @@
             <div class="modal-body">
                 <ul class="list-group">
                     <li class="list-group-item">
-                        <a href="Login.html" class="text-decoration-none text-dark">
-                            <i class="fas fa-sign-in-alt me-2"></i>Đăng nhập
+                        <a href="acc-info.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-user me-2"></i>Thông tin tài khoản
                         </a>
                     </li>
                     <li class="list-group-item">
-                        <a href="#" class="text-decoration-none text-dark">
-                            <i class="fas fa-user-plus me-2"></i>Đăng ký
+                        <a href="history.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-clock-rotate-left me-2"></i></i>Lịch sử đơn hàng
                         </a>
                     </li>
-
+                    <li class="list-group-item">
+                        <a href="address-book.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-address-book me-2"></i>Sổ địa chỉ
+                        </a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="Home.html" class="text-decoration-none text-dark">
+                            <i class="fa-solid fa-right-from-bracket me-2"></i>Đăng xuất
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -149,7 +161,7 @@
                         <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
                         <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
                         <div class="d-flex justify-content-between align-items-center">
-                            <span class="h5 mb-0">24.890.000đ</span>
+                            <span class="h5 mb-0">28.890.000đ</span>
                         </div>
                     </div>
                 </div>
@@ -159,9 +171,9 @@
             <div class="col-md-4 col-sm-6">
                     <a href="product-detail.html" class="text-decoration-none product-link">
                         <div class="card product-card">
-                            <img src="gallery/product-card/macbookpro-m2.webp" class="card-img-top" alt="MacBook Air M2">
+                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Pro 13" M2 Xám Titan</h5>
+                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
                                 <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
                                     <span class="h5 mb-0">28.890.000đ</span>
@@ -174,12 +186,12 @@
                 <div class="col-md-4 col-sm-6">
                     <a href="product-detail.html" class="text-decoration-none product-link">
                         <div class="card product-card">
-                            <img src="gallery/product-card/macbookpro-m3-14.webp" class="card-img-top" alt="MacBook Air M2">
+                            <img src="gallery/product-card/macbook-air-m2-silver.webp" class="card-img-top" alt="MacBook Air M2">
                             <div class="card-body">
-                                <h5 class="card-title">MacBook Pro 14" M3 Xám Titan</h5>
-                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 14.2"</p>
+                                <h5 class="card-title">MacBook Air 13" M2 Xám Titan</h5>
+                                <p class="card-text text-muted">RAM: 16GB, SSD: 512GB, Màn Hình: 13.6"</p>
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <span class="h5 mb-0">32.890.000đ</span>
+                                    <span class="h5 mb-0">28.890.000đ</span>
                                 </div>
                             </div>
                         </div>
@@ -220,14 +232,5 @@
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-  <script>
-        
-    function cart() {
-        alert("Quý khách vui lòng đăng nhập trước khi vào giỏ hàng!");
-        window.location.href = "Login.html"; 
-    }
-
-</script>
 </body>
 </html>
